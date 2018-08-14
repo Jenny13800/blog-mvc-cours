@@ -1,0 +1,103 @@
+* {
+    font-family: "Trebuchet MS";
+    color: #333;
+}
+
+a {
+    color: #da095e;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header div, main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: navy;
+    padding: 1em 0;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-right: 0.5em;
+    border-right: 1px solid white; 
+}
+
+nav a:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+footer {
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+footer nav a {
+    color: #333
+}
+
+article::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article img {
+    float: left;
+    width: 30%;
+    margin: 0 .5em .5em 0;
+}
+
+form {
+    margin: 2em 0;
+    background-color: #eee;
+    padding: 2em;
+}
+
+form::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: .5em;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: #da095e;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    float: right;
+}
